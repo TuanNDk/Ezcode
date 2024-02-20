@@ -1,0 +1,9 @@
+<?php $_shouldextend[1]=1; ?>
+<?php $this->startSection('title'); ?>
+ Admin - Dashboard
+<?php $this->stopSection(); ?>
+<?php $this->startSection('content'); ?>
+ <?php echo $this->runChild('dashboards.index'); ?>
+<?php $this->stopSection(); ?>
+
+<?php if (isset($_shouldextend[1])) { echo $this->runChild('layouts.master'); } ?>

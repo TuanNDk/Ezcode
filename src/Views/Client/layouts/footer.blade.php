@@ -1,0 +1,99 @@
+
+<section class="footer py-4" style="background-color: lightgray;">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="row pb-2">
+                    <div class="logo">
+                        <img class="img" src="../../../../uploads/background/logo.jpg" alt="logo" height="50px">
+                    </div>
+                    <strong class="text-danger pt-2" style="text-transform: uppercase">Đường Tới Thành
+                        Công</strong>
+                </div>
+                <div class="row ps-2 pb-2">
+                    Cơ sở 1: Số 2, Ngõ 12 Nguyễn Văn Huyên ( Ngõ 86 - Phố Chùa Hà), Cầu
+                    Giấy, Hà Nội. <br>
+                    <span>Hotline: 0909 990 130</span>
+                </div>
+                <div class="row ps-2 pb-2">
+                    Cơ sở 2: Số 181 Lê Đức Thọ, Quận Gò Vấp, Thành phố Hồ Chí Minh. <br>
+                    <span>Hotline: 0987654321</span>
+                </div>
+                <div class="row ps-2 pb-2">
+                    Cơ sở 2: Số 181 Lê Đức Thọ, Quận Gò Vấp, Thành phố Hồ Chí Minh. <br>
+                    <span>Hotline: 0987654321</span>
+                </div>
+                <div class="row ps-2 pb-2">
+                    Cơ sở 2: Số 181 Lê Đức Thọ, Quận Gò Vấp, Thành phố Hồ Chí Minh. <br>
+                    <span>Hotline: 0987654321</span>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="row">
+                    <div class="col">
+                        <div class="title-footer text-uppercase py-4">
+                            <p>Hỗ trợ khách hàng</p>
+                        </div>
+                        <div class="pb-2">
+                            <a href="">Câu hỏi thường gặp</a>
+                        </div>
+                        <div class="pb-2">
+                            <a href="">Khóa học Online</a>
+                        </div>
+                        <div class="pb-2">
+                            <a href="">Khóa học Offline</a>
+                        </div>
+                        <div class="pb-2">
+                            <a href="">Chính sách thanh toán</a>
+                        </div>
+                        <div class="pb-2">
+                            <a href="">Chính sách vận chuyển</a>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="title-footer text-uppercase py-4">
+                            <p>Về chúng tôi</p>
+                        </div>
+                        <div class="pb-2">
+                            <a href="">Đội ngũ</a>
+                        </div>
+                        <div class="pb-2">
+                            <a href="">Trung tâm</a>
+                        </div>
+                        <div class="pb-2">
+                            <a href="">Về chúng tôi</a>
+                        </div>
+                        <div class="pb-2">
+                            <a href="">Quyền riêng tư</a>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="title-footer text-uppercase py-4">
+                            <p>Kết nối</p>
+                        </div>
+                        <div class="pb-2">
+                            <div class="row">
+                                <a href=""> <i class="fa-brands fa-square-facebook"></i> Facebook</a>
+                            </div>
+                        </div>
+                        <div class="pb-2">
+                            <a href=""> <i class="fa-brands fa-facebook-messenger"></i> Messenger</a>
+                        </div>
+                        <div class="pb-2">
+                            <a href=""><i class="fa-brands fa-youtube"></i> Youtube</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row text-uppercase fw-medium">
+            <span>CopyRight © 2024 . Nền tảng học trực tuyến hàng đầu Mỹ Đình</span>
+        </div>
+    </div>
+</section>
+<a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
+        class="bi bi-arrow-up-short"></i></a>

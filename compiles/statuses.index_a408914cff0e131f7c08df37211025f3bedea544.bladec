@@ -1,0 +1,54 @@
+<?php $_shouldextend[1]=1; ?>
+<?php $this->startSection('title'); ?>
+ Status management
+<?php $this->stopSection(); ?>
+<?php $this->startSection('content'); ?>
+ <div class="row mt-4 p-0">
+ <div class="col-md-2 p-0"></div>
+ <div class="col-md bg-light ps-4 mt-2">
+ <!-- Page Heading -->
+ <div class="d-sm-flex align-items-center justify-content-between my-4 border py-2 rounded bg-white">
+ <h3 class="mb-0 text-black py-1 ps-4">Status List</h3>
+ </div>
+ <a href="statuses/create" class="btn btn-info mt-2 mb-4"><i class="ti-plus"></i></a>
+ <div>
+ <table class="table table-striped table-hover table-condensed text-center">
+ <thead>
+ <tr>
+ <th>ID</th>
+ <th>Name</th>
+ <th>Action</th>
+ </tr>
+ </thead>
+ <tbody>
+ <?php $__currentLoopData = $statuses; $this->addLoop($__currentLoopData);$this->getFirstLoop();
+ foreach($__currentLoopData as $status): $loop = $this->incrementLoopIndices();  ?>
+ <tr>
+ <td class="fw-bold"> <?php echo \htmlentities($status['id']??'', ENT_QUOTES, 'UTF-8', false); ?> </td>
+ <td> <?php echo \htmlentities($status['name']??'', ENT_QUOTES, 'UTF-8', false); ?> </td>
+ <td>
+ <a class="btn btn-info" href="/Admin/statuses/<?php echo \htmlentities($status['id']??'', ENT_QUOTES, 'UTF-8', false); ?>/show"><i
+ class="ti-zoom-in"></i></a>
+ <a class="btn btn-warning" href="/Admin/statuses/<?php echo \htmlentities($status['id']??'', ENT_QUOTES, 'UTF-8', false); ?>/update"><i
+ class="ti-pencil-alt"></i></a>
+ <a class="btn btn-danger" onclick="return confirm('Bạn có chắc chắc muốn xóa không ??')"
+ href="/Admin/statuses/<?php echo \htmlentities($status['id']??'', ENT_QUOTES, 'UTF-8', false); ?>/delete"><i class="ti-trash">
+ </i></a>
+ </td>
+ </tr>
+ <?php endforeach; $this->popLoop(); $loop = $this->getFirstLoop(); ?>
+ </tbody>
+ </table>
+ </div>
+ </div>
+ <div class="col-md-1 p-0"></div>
+ </div>
+ <style>
+ .table>tbody>tr>td {
+ height: 80px;
+ line-height: 80px;
+ }
+ </style>
+<?php $this->stopSection(); ?>
+
+<?php if (isset($_shouldextend[1])) { echo $this->runChild('layouts.master'); } ?>

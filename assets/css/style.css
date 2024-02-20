@@ -1,0 +1,56 @@
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* background-color: rgb(191, 77, 77); */
+}
+
+.mt100 {
+    margin-top: 100px;
+}
+
+.mt110 {
+    margin-top: 110px;
+}
+
+.mt120 {
+    margin-top: 120px;
+}
+
+.mt165 {
+    margin-top: 165px;
+}
+
+.title-footer>p {
+    font-size: 18x;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+.footer a,
+.login a {
+    color: black;
+}
+
+.footer a:hover,
+.login a:hover {
+    text-decoration: underline;
+    color: #0D6EFD;
+}
+
+.error {
+    color: rgb(24, 12, 197);
+}
+
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100000;
+}

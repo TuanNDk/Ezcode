@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="container text-center mb-4 mt-5">
+        <div class="row text-center">
+            <div class="col-md-2"></div>
+            <div class="col-md border-secondary-subtle shadow p-3 mb-3 bg-body-tertiary rounded">
+                <div class="row">
+                    <div class="col">
+                        <img class="w-100" src="../../../uploads/background/login-elearning.png" alt="">
+                    </div>
+                    <div class="col">
+                        <div class="my-4 text-uppercase text-danger fw-medium fs-3">
+                            <span>LOGIN</span>
+                        </div>
+
+                        @if (!empty($_SESSION['errors']))
+                            <div class="alert alert-danger">
+                                <ul>
+                                    @foreach ($_SESSION['errors'] as $key => $error)
+                                        <li>Key: {{ $key }} - ERROR: {{ $error }}</li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                        @endif
+                        @php
+                            $_SESSION['errors'] = null;
+                        @endphp
+
+                        <div class="mb-4">
+                            <img class="rounded-circle bg-light w-45" src="../../../uploads/avatar-login.png"
+                                alt="">
+                        </div>
+
+                        <form action="" method="post">
+                            <div class="form-group mt-2 mb-3">
+                                <input type="text" name="email" class="form-control"
+                                    placeholder="Enter your email ...">
+                            </div>
+
+                            <div class="form-group">
+                                <input type="password" name="password" class="form-control"
+                                    placeholder="Enter your password ...">
+                            </div>
+
+                            <div class="form-group float-end mt-2 ">
+                                <a class="text-decoration-none" href="">Forgot password ?</a>
+                            </div><br><br>
+
+                            <div class="">
+                                <button type="submit" style="width:100%"
+                                    class="btn btn-primary btn-block">Login</button>
+                            </div>
+                            <hr>
+                            <div class="my-2">
+                                <span>Don't have an account ?</span>
+                                <a class="text-danger" href="/client/views/register.php">Register</a>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+</script>
+
+</html>

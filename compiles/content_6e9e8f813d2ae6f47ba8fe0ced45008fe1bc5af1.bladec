@@ -1,0 +1,23 @@
+<?php $_shouldextend[1]=1; ?>
+
+<?php $this->startSection('title'); ?>
+ Trang chủ
+<?php $this->stopSection(); ?>
+
+
+<?php echo $this->runChild('layouts.sliders'); ?>
+<?php $this->startSection('content'); ?>
+ <div class=" bg-light">
+ <div class="container">
+ <section class="product-list mb-5">
+ <?php echo $this->runChild('components.course-entry-1'); ?>
+ </section>
+ </div>
+ </div>
+<?php $this->stopSection(); ?>
+
+<?php $this->startSection('advertisements'); ?>
+ <?php echo $this->runChild('layouts.advertisements'); ?>
+<?php $this->stopSection(); ?>
+
+<?php if (isset($_shouldextend[1])) { echo $this->runChild('layouts.master'); } ?>
